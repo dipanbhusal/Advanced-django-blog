@@ -14,3 +14,5 @@ Run the server
 Directories: 
   Blog Home: http://127.0.0.1:8000/
   
+##  Home Page
+![alt text](https://prnt.sc/tnvct2)
