@@ -15,4 +15,4 @@ Directories:
   Blog Home: http://127.0.0.1:8000/
   
 ##  Home Page
-![picture]('https://prnt.sc/tnvct2')
+Picture of homepage: https://prnt.sc/tnvct2
