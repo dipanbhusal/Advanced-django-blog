@@ -1,11 +1,14 @@
 # Advanced-django-blog
 
 To activate  In terminal
+
     $ source blog-env/bin/activate 
 
 Then navigate to adv_blog
 
 Run the server
+
+
     $ ./manage.py runserver
 
 Directories: 
