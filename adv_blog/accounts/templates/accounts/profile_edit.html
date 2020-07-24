@@ -1,0 +1,14 @@
+{%extends 'blog/base.html'%}
+{%block content%}
+<form action="" method="post" enctype="multipart/form-data" class="profile-form-box">
+    {%csrf_token%}
+    <div class="profile-form-section">
+        {{form.as_p}}
+            <input type="submit" value="Update">
+    </div>
+    
+</form>
+
+
+
+{%endblock content%}

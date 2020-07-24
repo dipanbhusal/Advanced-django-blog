@@ -1,0 +1,29 @@
+{% extends 'blog/base.html' %}
+
+{%block content %}
+<section class="post-container">
+    <main class="banner" style="background-image:url({{post.image.url}});">
+        <div class="full-post-title">
+            {{post.title}}
+        </div>
+        <div class="other-info">
+            By {{post.author.username}} <br>
+            Posted at {{post.created_at}}
+        </div>
+    </main>
+    <div class="more-options">
+        {%if post.author == user %}
+        <a href="{% url 'blog:post-update' post.slug %}"> <button class="update-btn">Update Post</button></a>
+        <form action="{% url 'blog:post-delete' post.slug %}" method="post" id="formDelete">
+            {%csrf_token%}
+            <a href="#" onclick="document.getElementById('formDelete').submit()"> <button class="delete-btn">Delete Post</button></a>
+        </form>
+        {%endif%}
+       
+    </div>
+    <div class="full-post-body">
+        <img src="{{post.image.url}}" alt="">
+       <p>{{post.content}}</p> 
+    </div>
+</section>
+{%endblock content%}

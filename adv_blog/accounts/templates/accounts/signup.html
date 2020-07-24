@@ -1,0 +1,15 @@
+{%extends 'accounts/base.html'%}
+{%block content%}
+<form action="" method="post" class="signup-form-box">
+    {%csrf_token%}
+    <div class="signup-form-section">
+        {{form.as_p}}
+            <input type="submit" value="Signup">
+            <a href="{%url 'accounts:login' %}" class="register-btn"> Login</a>
+    </div>
+    
+</form>
+
+
+
+{%endblock content%}

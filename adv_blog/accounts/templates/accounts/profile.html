@@ -1,0 +1,22 @@
+{%extends 'blog/base.html'%}
+{%block content%}
+<div class="profile-container">
+    
+    <div class="profile-info">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{{user.profile_picture.url}}" class="profile-picture"  alt="">
+            </div>
+            <div class="col-md-4">
+                <div class="name">Full Name: {{user.first_name}} {{user.last_name}}</div>
+                Email: {{user.email}} <br>
+                Bio: {{user.bio}}
+            </div>
+            <div class="col-md-4">
+                <a href="{% url 'accounts:profile-edit' user.username %}"> <button class="update-btn" style="width: 100px;">Update Profile</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{%endblock content%}

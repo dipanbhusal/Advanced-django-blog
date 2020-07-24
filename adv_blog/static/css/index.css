@@ -1,0 +1,29 @@
+nav{
+    padding-top: 2px;
+    background-color: #ffa400;
+    width: 100%;
+    height: 9vh;
+    margin-bottom: 10px;
+}
+
+li>a{
+    text-decoration: none;
+    color: #ffffff;  
+}
+nav ul li{
+    font-size: 20px;
+    display: block;
+    float: left;
+    padding: 10px 15px;
+    
+}
+ul li a{
+    padding: 3vh ;
+}
+li>a:hover{
+    background-color: #ffffff;
+    color: #ffa400;
+    text-decoration: none;
+}
+
+

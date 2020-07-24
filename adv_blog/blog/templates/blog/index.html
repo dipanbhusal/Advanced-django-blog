@@ -1,0 +1,27 @@
+{%extends 'blog/base.html' %}
+{%block content%}
+
+
+    <div class="container">
+        <div class="row">
+            {% for post in posts %}
+            <div class="col-md-4 ">
+                <div class="card">
+                    <h6 class="author">{{post.author.first_name}}</h6>
+                    <h6 class="date">{{post.created_at | date:"d F "}}{{post.created_at | time:"H a "}}</h6>
+
+                    <img src="{{post.image.url}}" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title"><a href="{%url 'blog:post-detail' post.slug %}" >{{post.title}}</a> </h5>
+                        <p>{{post.content | truncatechars:10}}</p>
+                        <a href="{%url 'blog:post-detail' post.slug %}" class="btn btn-md">Read More</a>
+                    </div>
+                </div>
+            </div> 
+            {%endfor%}
+
+
+        </div>
+    </div>
+
+{%endblock content%}

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+}
+.form-container{
+    
+    background-image: linear-gradient( to right, #ffd700e6,#ffb31a78);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.login-form-box{
+   
+    height: 300px;
+    width: 350px;
+    position: relative;
+    margin: 6% auto;
+    top: 17%;
+    background-color: #ffffff;
+    opacity: 0.8;
+    padding:5px;
+    border-radius: 5px;
+    
+}
+.login-form-section{
+    margin: 25% 40px;
+}
+
+form p input, form p textarea{
+    width: 100%;
+    margin-bottom: 25px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px #999;
+    
+    border-bottom:   1px  solid #999;
+    outline: none;
+
+}
+
+
+input[type=submit]{
+    background-image: linear-gradient( to right, #ffd700e6,#ffb31a78);
+    border-radius: 30px;
+    width: 100px;
+    height: 28px;
+    font-size: 20px;
+    border: 0;
+    color: grey;
+}
+input[type=file]{
+    border: 0;
+}
+.register-btn{
+    background-image: linear-gradient( to right, #ffd700e6,#ffb31a78);
+    border-radius: 30px;
+    padding: 3px 25px;
+    height: 30px;
+    font-size: 20px;
+    border: 0;
+    color: grey;
+    text-decoration: none;
+}
+input[type=submit]:hover{
+    background-image: linear-gradient( to left, #ffd700e6,#ffb31a78);
+
+}
+.register-btn:hover{
+    background-image: linear-gradient( to left, #ffd700e6,#ffb31a78);
+
+}
+
+.signup-form-box{
+   
+    height: 400px;
+    width: 350px;
+    position: relative;
+    margin: 7% auto;
+    
+    background-color: #ffffff;
+    opacity: 0.8;
+    padding:5px;
+    border-radius: 5px;
+    
+}
+.create-form-box{
+   
+    height: 500px;
+    width: 350px;
+    position: relative;
+    margin: 3% auto;
+    
+    background-color: #ffffff;
+    opacity: 0.8;
+    padding:5px;
+    border-radius: 5px;
+    
+}
+
+
+
+.signup-form-section{
+    margin: 25% 40px;
+}
+
+.message{
+    position: relative;
+    top: 10%;
+    left: 40%;
+    color: red;
+    font-weight: bolder;
+}
